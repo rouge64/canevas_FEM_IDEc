@@ -44,19 +44,20 @@ Many slides also include recommendations and best practices to improve the quali
 .
 ├── data/
 │   ├── preamble.tex      # Packages and global configuration
-│   └── info.tex          # Author and presentation information
+│   ├── info.tex          # Author and presentation information
+│   └── images/           # HE-Arc logo and signature
 │
 ├── slides/
-│   ├── information/      # Project definition and methodology
-│   ├── modelling/        # FEM modelling
-│   ├── results/          # Results and discussion
-│   └── conclusion/       # Conclusions and references
+│   ├── 1_Informations/   # Project definition and methodology
+│   ├── 2_Modélisation/   # FEM modelling
+│   ├── 3_Résultats/      # Results and discussion
+│   └── 4_Conclusion/     # Conclusions and references
 │
 ├── img/
-│   ├── information/
-│   ├── modelling/
-│   ├── results/
-│   └── conclusion/
+│   ├── 1/                # Information
+│   ├── 2/                # Modelling
+│   ├── 3/                # Results
+│   └── 4/                # Conclusion
 │
 ├── references.bib
 └── main.tex
