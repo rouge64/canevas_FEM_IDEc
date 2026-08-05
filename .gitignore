@@ -1,0 +1,25 @@
+# Folder with auxiliary files
+build/
+
+# If you don't have this folder
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.lof
+*.lot
+
+# Temps
+*.tmp
+*.bak
+*~

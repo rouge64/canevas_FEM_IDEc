@@ -1,0 +1,12 @@
+Large deflection:
+    Il faut activer les non linéarités géométriques dans le cas où la structure étudiée subit de la rotation, lorsque les déplacements sont de l’ordre de 2-3% de la taille du modèle, ou qu’il y a un risque de flambage. Si la réponse n’est pas trop non linéaire, la pénalisation pour le calcul est faible (Newton-Raphson va converger très vite), par contre si il y a risque de flambage, on aura la possibilité de le détecter. Dans ce cas le plantage du calcul est plutôt une bonne nouvelle, car il correspond à un réel problème causé par la physique étudiée.
+    
+Meshing
+    Rigidité: maillage grossier (par exemple analyse modale, évaluation de la raideur d’une structure).
+    2-3 éléments dans l’épaisseur si modélisation avec des EF solides, en particulier si il y a une composante de déformation en flexion.
+    Calcul de structure: éléments second ordre intégration réduite (sauf problèmes de contact ou dynamique explicite). Thermique: éléments linéaires.
+    Problèmes dominés par la flexion : modélisation coque (ou poutre) avec éléments linéaires.
+    Tétra linéaires interdits (rigidité pas très correcte) pour la structure.
+
+Metrics:
+    Voir la Meshing User's guide a page 133
