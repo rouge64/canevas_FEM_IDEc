@@ -14,6 +14,6 @@ Metrics:
 Conseil sur le canevas:
     Utilisez ce canevas comme une liste de contrôle tout au long de votre projet. En complétant progressivement chaque diapositive, vous limitez le risque d'oublier des informations importantes et la rédaction de la documentation finale devient beaucoup plus simple. À chaque étape, demandez-vous toutefois si la diapositive apporte une réelle valeur ajoutée à votre étude. Si ce n'est pas le cas, supprimez-la. L'objectif n'est pas de conserver toutes les diapositives, mais de ne garder que celles qui sont pertinentes.
     Pensez également à créer, dès le début de la modélisation, des vues enregistrées du modèle (orientations, zooms, coupes, etc.). En réutilisant systématiquement ces mêmes vues pour les captures d'écran, il est plus facile de comparer les différentes étapes de la modélisation et la documentation finale gagne en cohérence, en lisibilité et en qualité visuelle.
-
+    Certains logiciels, comme Ansys, proposent des rapports générés automatiquement. Ils constituent une excellente liste de contrôle pour vérifier qu'aucun élément important, notamment les propriétés des matériaux, n'a été oublié.
 TODO: 
     Add DoE
