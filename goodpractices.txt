@@ -1,7 +1,7 @@
 Large deflection:
     Il faut activer les non linéarités géométriques dans le cas où la structure étudiée subit de la rotation, lorsque les déplacements sont de l’ordre de 2-3% de la taille du modèle, ou qu’il y a un risque de flambage. Si la réponse n’est pas trop non linéaire, la pénalisation pour le calcul est faible (Newton-Raphson va converger très vite), par contre si il y a risque de flambage, on aura la possibilité de le détecter. Dans ce cas le plantage du calcul est plutôt une bonne nouvelle, car il correspond à un réel problème causé par la physique étudiée.
     
-Meshing
+Meshing:
     Rigidité: maillage grossier (par exemple analyse modale, évaluation de la raideur d’une structure).
     2-3 éléments dans l’épaisseur si modélisation avec des EF solides, en particulier si il y a une composante de déformation en flexion.
     Calcul de structure: éléments second ordre intégration réduite (sauf problèmes de contact ou dynamique explicite). Thermique: éléments linéaires.
@@ -11,6 +11,9 @@ Meshing
 Metrics:
     Voir la Meshing User's guide a page 133
 
+Conseil sur le canevas:
+    Utilisez ce canevas comme une liste de contrôle tout au long de votre projet. En complétant progressivement chaque diapositive, vous limitez le risque d'oublier des informations importantes et la rédaction de la documentation finale devient beaucoup plus simple. À chaque étape, demandez-vous toutefois si la diapositive apporte une réelle valeur ajoutée à votre étude. Si ce n'est pas le cas, supprimez-la. L'objectif n'est pas de conserver toutes les diapositives, mais de ne garder que celles qui sont pertinentes.
+    Pensez également à créer, dès le début de la modélisation, des vues enregistrées du modèle (orientations, zooms, coupes, etc.). En réutilisant systématiquement ces mêmes vues pour les captures d'écran, il est plus facile de comparer les différentes étapes de la modélisation et la documentation finale gagne en cohérence, en lisibilité et en qualité visuelle.
+
 TODO: 
-    Add PEX
-    
+    Add DoE
