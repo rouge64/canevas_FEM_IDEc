@@ -17,3 +17,4 @@ Conseil sur le canevas:
     Certains logiciels, comme Ansys, proposent des rapports générés automatiquement. Ils constituent une excellente liste de contrôle pour vérifier qu'aucun élément important, notamment les propriétés des matériaux, n'a été oublié.
 TODO: 
     Add DoE
+    Modify Titlepage, remove name and add something useful
