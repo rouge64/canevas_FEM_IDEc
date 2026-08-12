@@ -6,15 +6,43 @@
     \column{.45\textwidth}
     \begin{itemize}
         \item Préciser le logiciel utilisé (ANSYS, Abaqus, ...)
-        \item Préciser le type d'analyse (statique structurelle, modale, thermique, dynamique explicite, ...)
-        \item Décrire la démarche complète lorsque la méthode ne se limite pas à une simple simulation (acquisition de données, identification des paramètres, essais, \textbf{validation} expérimentale, post-traitement, ...)
+        \item Préciser le type d'analyse (statique, modale, thermique, dynamique, ...)
+        \item Décrire la démarche complète si elle dépasse la simple simulation (acquisition, identification, essais, \textbf{validation}, post-traitement, ...)
+        \item Diagramme de flux pour les méthodes complexes (draw.io ou TikZ, si possible)
     \end{itemize}
     
     \column{.45\textwidth}
-    \begin{itemize}
-        \item Diagramme de flux (pour les méthodes complexes)
-        \item draw.io ou TikZ, si possible
-    \end{itemize}
+      \centering
+      \begin{tikzpicture}[
+        node distance=0.5cm,
+        box/.style={draw,rectangle,minimum width=4cm,minimum height=0.8cm,align=center},
+        arrow/.style={->,>=stealth}]
+
+        % Nodes
+        \node[box] (data) {
+            Données\\
+            $F,\ E,\ \nu$
+        };
+        \node[box, below=of data] (analytical) {
+            Calcul analytique
+        };
+        \node[box, below=of analytical] (fem) {
+            Simulation FEM
+        };
+        \node[box, below=of fem] (comparison) {
+            Comparaison
+        };
+        \node[box, below=of comparison] (validation) {
+            Validation
+        };
+
+        % Arrows
+        \draw[arrow] (data) -- (analytical);
+        \draw[arrow] (analytical) -- (fem);
+        \draw[arrow] (fem) -- (comparison);
+        \draw[arrow] (comparison) -- (validation);
+
+      \end{tikzpicture}
   \end{columns}
 \end{frame}
 
