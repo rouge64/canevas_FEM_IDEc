@@ -1,18 +1,59 @@
+% ============================================================
+% Encoding & Language
+% ============================================================
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{amsmath,amssymb}
-\usepackage{hyperref}
-\usepackage{tikz}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
-\usepackage{xcolor}
-\usetheme[secheader]{Boadilla}
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
 \usepackage[french]{babel}
 \usepackage{csquotes}
+
+
+% ============================================================
+% Mathematics
+% ============================================================
+\usepackage{amsmath,amssymb}
+
+
+% ============================================================
+% Graphics, TikZ & Structural Mechanics
+% ============================================================
+\usepackage{graphicx}
+
+\usepackage{tikz}
+
+\usepackage{stanli}
+
+%\usepackage{pgfplots}
+%\pgfplotsset{compat=1.18}
+
+\usepackage{xcolor}
+
+
+% ============================================================
+% Tables
+% ============================================================
+\usepackage{booktabs}
+
+
+% ============================================================
+% Beamer Theme & Fonts
+% ============================================================
+\usetheme[secheader]{Boadilla}
+
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\setbeamertemplate{navigation symbols}{}
+
+
+% ============================================================
+% Hyperlinks
+% ============================================================
+\usepackage{hyperref}
+
+
+% ============================================================
+% Bibliography
+% ============================================================
 \usepackage[
     backend=biber,
     style=ieee,
@@ -22,11 +63,13 @@
     isbn=false,
     eprint=false
 ]{biblatex}
+
 \addbibresource{references.bib}
-\setbeamertemplate{navigation symbols}{}
 
 
+% ============================================================
 % Logo
+% ============================================================
 \pgfdeclareimage[height=0.4cm]{logo}{data/images/ARC_Ingenierie.jpg}
 \logo{\pgfuseimage{logo}}
 
